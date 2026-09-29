@@ -10,6 +10,7 @@ import { ReportView } from './views/ReportView';
 import { AIMatchHubView } from './views/AIMatchHubView';
 import { LocationsView } from './views/LocationsView';
 import { ItemDetailModal } from './components/ItemDetailModal';
+import { AIChatWidget } from './components/AIChatWidget';
 import { CheckCircle2, Sparkles, X } from 'lucide-react';
 
 export default function App() {
@@ -219,6 +220,9 @@ export default function App() {
         }}
         onResetData={handleResetData}
       />
+
+      {/* Floating n8n AI Chat Assistant */}
+      <AIChatWidget items={items} />
     </div>
   );
 }
